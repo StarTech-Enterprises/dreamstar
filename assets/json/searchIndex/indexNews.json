@@ -1,0 +1,15 @@
+var searchIndex = [
+
+    {
+        "title": "£750,000 of funding announced for film skills training",
+        "date": "January 11, 2021",
+        "url": "articles/new-funding.html",
+        "content": "ScreenSkills will be investing £750,000 in film skills training in a new funding round...",
+        "image_url": "articles/images/new-funding.jpg",
+        "tags_filterOne": ['2021'],
+        "tags_filterTwo": ['January'],
+        "tags_filterThree": ['Article']
+    }
+];
+
+

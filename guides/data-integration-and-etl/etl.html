@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- HTML Head Tag Links -->
+		<!-- Reference to HTML Head Tag Links -->
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ETL - Extract, Transform, & Load | DreamStar </title>
+
+<!-- link to Website Tab Icon -->
+<link rel="shortcut icon" type="image/x-icon" href="/../dreamstar/assets/images/alt-logo-star-tilted.png">
+
+<!-- link to Main Stylesheets -->
+<link rel="stylesheet" type="text/css" href="/../dreamstar/assets/css/styles.css">
+
+<!-- link to Google Fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+
+
+
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@350..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
+<!-- link to Font awesome -->
+<script src="https://kit.fontawesome.com/378306bc97.js" crossorigin="anonymous"></script>
+
+<!-- link to Material Icons -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!-- link to Iconify CDN -->
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+<!-- link to UUID -->	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv5.min.js"></script>
+
+
+	</head>
+
+	<!-- Set Color Theme to Body-->
+	<body class="
+	
+	">
+
+	   <!-- Needed for any Scroll to Top Buttons -->
+		<a id="top"></a>
+
+		<!-- Sections to Website -->
+			<!-- Site Header --> 
+
+<header class="site-header">
+
+    <!-- Main Header --> 
+    <div class="main-header">
+        <div class="main-header__container">
+            <a class="site-header__logo-link" href="/../dreamstar/">
+                <img class="site-header__logo" src="/../dreamstar/logos/dream-star-logo-text.png">
+
+                <div class="overlay">
+                    <img class="site-header__logo-square" src="/../dreamstar/logos/dream-star-logo.png"> 
+                </div>
+
+            </a>
+            <nav class="main-nav c">
+                <ul class="primary-nav">
+                    <li class="primary-nav__item
+                    
+                    ">
+                        <a class="primary-nav__link primary-nav__hover1" href="/../dreamstar/careers/">
+                            Industry
+                        </a>
+                    </li>
+                    <li class="primary-nav__item
+                    
+                    ">
+                        <a class="primary-nav__link primary-nav__hover1">
+                            Finance
+                        </a>
+                    </li>
+                    <li class="primary-nav__item
+                    
+                    ">
+                        <a class="primary-nav__link primary-nav__hover1" href="/../dreamstar/insight/">
+                            Insight
+                        </a>
+                    </li>
+                    <li class="primary-nav__item
+                    
+                    ">
+                        <a class="primary-nav__link primary-nav__hover1">
+                            About
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="main-header__right">
+                <span class="header-sidebar-nav">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 26" class="header-sidebar-nav-toggle__icon">
+                        <path fill="currentColor" d="M1937.14,394.5a9.75,9.75,0,1,1,9.79-9.751A9.778,9.778,0,0,1,1937.14,394.5Zm0-16.251a6.5,6.5,0,1,0,6.52,6.5A6.521,6.521,0,0,0,1937.14,378.249ZM1933.92,401h-35.91v-3.25h35.91V401Zm16.71-.032-8.15-8.6,2.37-2.231,8.15,8.6Zm-29.79-8.093h-22.83v-3.251h22.83v3.251Zm0-8.126h-22.83V381.5h22.83v3.249Z" transform="translate(-1898 -375)" />
+                    </svg>
+                </span>
+            </nav>
+
+        </div>
+    </div>
+    <!-- End of Main Header --> 
+    
+
+    <!-- Secondary Header --> 
+    
+    
+    <!-- End of Secondary Header --> 
+
+
+    <!-- Slide Out Mask --> 
+    <div class="slide-out-mask">  
+    </div>
+    <!-- End of Slide Out Mask --> 
+
+    
+    <!-- Slide Out --> 
+    <!-- Slide Out --> 
+
+<div class="slide-out"> 
+
+    <nav class="slide-out-nav">
+        <ul class="slide-out-nav__list">
+
+            <li class="slide-out-nav__item
+            
+            ">
+                <span class="nav-dropdown-toggle">
+                    <svg class="icon--m">
+                        <use xlink:href="#chevron-down">
+                            <symbol id="chevron-down" viewBox="0 0 448 512">
+                                <path fill="currentColor" d="M441.9 167.3l-19.8-19.8c-4.7-4.7-12.3-4.7-17 0L224 328.2 42.9 147.5c-4.7-4.7-12.3-4.7-17 0L6.1 167.3c-4.7 4.7-4.7 12.3 0 17l209.4 209.4c4.7 4.7 12.3 4.7 17 0l209.4-209.4c4.7-4.7 4.7-12.3 0-17z"></path>
+                            </symbol>
+                        </use>
+                    </svg>
+                </span>
+                <a class="slide-out-nav__link" href="/">Home</a>
+                <ul class="mobile-nav-dropdown">
+                    <li class="mobile-nav-dropdown__item
+                    
+                    ">
+                        <a class="mobile-nav-dropdown__link" href="">
+                            What we do
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="slide-out-nav__item
+            
+            ">
+                <span class="nav-dropdown-toggle">
+                    <svg class="icon--m">
+                        <use xlink:href="#chevron-down">
+                            <symbol id="chevron-down" viewBox="0 0 448 512">
+                                <path fill="currentColor" d="M441.9 167.3l-19.8-19.8c-4.7-4.7-12.3-4.7-17 0L224 328.2 42.9 147.5c-4.7-4.7-12.3-4.7-17 0L6.1 167.3c-4.7 4.7-4.7 12.3 0 17l209.4 209.4c4.7 4.7 12.3 4.7 17 0l209.4-209.4c4.7-4.7 4.7-12.3 0-17z"></path>
+                            </symbol>
+                        </use>
+                    </svg>
+                </span>
+                <a class="slide-out-nav__link" href="/../dreamstar/careers/"">Industry</a>
+                <ul class="mobile-nav-dropdown">
+                    <li class="mobile-nav-dropdown__item
+                    
+                    ">
+                        <a class="mobile-nav-dropdown__link" href="/../dreamstar/careers/job-profiles/">
+                            Job Profiles
+                        </a>
+                    </li>
+                    <li class="mobile-nav-dropdown__item
+                    
+                    ">
+                        <a class="mobile-nav-dropdown__link" href="/../dreamstar/careers/first-day-on-set/">
+                            First day on set
+                        </a>
+                    </li>
+                    <li class="mobile-nav-dropdown__item
+                    
+                    ">
+                        <a class="mobile-nav-dropdown__link" href="/../dreamstar/careers/how-to-get-in/">
+                            How to get in
+                        </a>
+                    </li>
+                    <li class="mobile-nav-dropdown__item
+                    
+                    ">
+                        <a class="mobile-nav-dropdown__link" href="/../dreamstar/careers/building-your-portfolio/">
+                            Portfolio
+                        </a>
+                    </li>
+                    <li class="mobile-nav-dropdown__item
+                    
+                    ">
+                        <a class="mobile-nav-dropdown__link" href="/../dreamstar/careers/how-to-network-well/">
+                            Network
+                        </a>
+                    </li>
+                    <li class="mobile-nav-dropdown__item
+                    
+                    ">
+                        <a class="mobile-nav-dropdown__link" href="/../dreamstar/careers/how-to-approach-employers/">
+                            Approaching employers
+                        </a>
+                    </li>
+                    <li class="mobile-nav-dropdown__item
+                    
+                    ">
+                        <a class="mobile-nav-dropdown__link" href="/../dreamstar/careers/freelancers/">
+                            Freelancers
+                        </a>
+                    </li>
+                    <li class="mobile-nav-dropdown__item
+                    
+                    ">
+                        <a class="mobile-nav-dropdown__link" href="/../dreamstar/careers/career-resources/">
+                            Career Resources
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="slide-out-nav__item
+            
+            ">
+                <span class="nav-dropdown-toggle">
+                    <svg class="icon--m">
+                        <use xlink:href="#chevron-down">
+                            <symbol id="chevron-down" viewBox="0 0 448 512">
+                                <path fill="currentColor" d="M441.9 167.3l-19.8-19.8c-4.7-4.7-12.3-4.7-17 0L224 328.2 42.9 147.5c-4.7-4.7-12.3-4.7-17 0L6.1 167.3c-4.7 4.7-4.7 12.3 0 17l209.4 209.4c4.7 4.7 12.3 4.7 17 0l209.4-209.4c4.7-4.7 4.7-12.3 0-17z"></path>
+                            </symbol>
+                        </use>
+                    </svg>
+                </span>
+                <a class="slide-out-nav__link" href="/">Finance</a>
+                <ul class="mobile-nav-dropdown">
+                    <li class="mobile-nav-dropdown__item
+                    
+                    ">
+                        <a class="mobile-nav-dropdown__link" href="">
+                            Production Accounting
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+        
+            <li class="slide-out-nav__item
+            
+            ">
+                <span class="nav-dropdown-toggle">
+                    <svg class="icon--m">
+                        <use xlink:href="#chevron-down">
+                            <symbol id="chevron-down" viewBox="0 0 448 512">
+                                <path fill="currentColor" d="M441.9 167.3l-19.8-19.8c-4.7-4.7-12.3-4.7-17 0L224 328.2 42.9 147.5c-4.7-4.7-12.3-4.7-17 0L6.1 167.3c-4.7 4.7-4.7 12.3 0 17l209.4 209.4c4.7 4.7 12.3 4.7 17 0l209.4-209.4c4.7-4.7 4.7-12.3 0-17z"></path>
+                            </symbol>
+                        </use>
+                    </svg>
+                </span>
+                <a class="slide-out-nav__link" href="/../dreamstar/insight/">Insight</a>
+                <ul class="mobile-nav-dropdown">
+                    <li class="mobile-nav-dropdown__item
+                    
+                    ">
+                        <a class="mobile-nav-dropdown__link" href="/../dreamstar/insight/news/">
+                            News
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="slide-out-nav__item   
+            
+            ">
+                <span class="nav-dropdown-toggle">
+                    <svg class="icon--m">
+                        <use xlink:href="#chevron-down">
+                            <symbol id="chevron-down" viewBox="0 0 448 512">
+                                <path fill="currentColor" d="M441.9 167.3l-19.8-19.8c-4.7-4.7-12.3-4.7-17 0L224 328.2 42.9 147.5c-4.7-4.7-12.3-4.7-17 0L6.1 167.3c-4.7 4.7-4.7 12.3 0 17l209.4 209.4c4.7 4.7 12.3 4.7 17 0l209.4-209.4c4.7-4.7 4.7-12.3 0-17z"></path>
+                            </symbol>
+                        </use>
+                    </svg>
+                </span>
+                <a class="slide-out-nav__link" href="/">About</a>
+                <ul class="mobile-nav-dropdown">
+                    <li class="mobile-nav-dropdown__item
+                    
+                    ">
+                        <a class="mobile-nav-dropdown__link" href="/">
+                            What we do
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
+
+    <ul class="slide-out-account-nav">
+        <li class="slide-out-account-nav__item">
+            <a class="slide-out-account-nav__link" href="">
+                Contact Us
+            </a>
+        </li>
+    </ul>
+
+    <ul class="slide-out-social">
+        <li class="slide-out-social__item">
+            <a class="slide-out-social__link" href="" target="_blank">
+                <svg class="icon--m">
+                    <use xlink:href="#facebook-f">
+                        <symbol id="facebook-f" viewBox="0 0 264 512">
+                            <path fill="currentColor" d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"></path>
+                        </symbol>
+                    </use>
+                </svg>
+            </a>
+        </li>
+    </ul>
+
+</div>
+
+<!-- End of Slide Out -->
+    <!-- End of Slide Out --> 
+     
+    
+</header>
+
+<!-- End of Site Header -->
+
+			<!-- Start of Main Container --> 
+
+
+<!-- Different Structure depending on 'Layout' Property of Content-->
+<!-- ************************************************************************************************************ -->
+
+
+
+  <!-- Start of Content -->
+  <div class="content-wrap">
+    <div class = "nav-bar has-border-bottom-none is-hidden-mobile">
+    <a class = "nav-bar-button is-title has-hover-underline has-text-etl-hover" href="etl.html">
+        <span>
+            ETL - Extract, Transform, & Load
+        </span>
+    </a>
+</div>
+
+<section class="hero has-background-etl">
+	<div class="uhf-container has-text-etl-invert">
+	<div class="columns">
+		<div class="column is-10-desktop">
+				<div class="has-padding-top-extra-large has-padding-bottom-extra-large">
+					<h1 id="hero-title" class="title">ETL - Extract, Transform, & Load</h1>
+						<p id="hero-summary" class="has-margin-none has-padding-top-medium">Use data connectivity and preparation technologies to seamlessly import and perform the extract, transform, and loading of data. Users can spend up to 80% of their time on data preparation, delaying the time to analysis and decision making. ETL is designed to help address these challenges.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="has-background-alternating-grey">
+    <div class="uhf-container has-padding-top-large has-padding-bottom-large">
+        <div class="columns is-multiline">
+
+                <div class="column is-4-tablet is-4-desktop">
+                    <a href="starting-with-etl/overview.html" class="box is-block is-full-height has-padding-medium has-heavy-shadow-hover has-border-high-contrast-hover has-padding-large is-undecorated" data-linktype="external">
+                        <div class="columns">
+                            <div class=" is-hidden-mobile">
+                                <div class="image is-max-64x64 has-text-etl">		
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="64" width = "64" viewBox="0 0 64 64" preserveAspectRatio="xMidYMin meet">		  
+                                        <g data-name="Layer 1">			
+                                            <path d="M60 19v31.57H35.84a5.33 5.33 0 0 1-3.77 2c-1.43 0-2.23-.45-3.77-2H4.05V19h4.61v25l19.62 1.39a4.17 4.17 0 0 1 3.58 4.12h.22a4.16 4.16 0 0 1 3.58-4.12L55.28 44V19z" fill="#acacac"/>			
+                                            <path d="M32 49.54a4.16 4.16 0 0 0-3.57-4.12L8.77 44V11.44l19 1.35A4.16 4.16 0 0 1 32 17z" fill="#e3e3e3"/>			
+                                            <path d="M32 49.54a4.16 4.16 0 0 1 3.58-4.12L55.19 44V11.71l-19 1.08A4.16 4.16 0 0 0 32 17z" fill-opacity=".3" fill="#e3e3e3"/>			
+                                            <path d="M31.71 49.54a4.16 4.16 0 0 0-3.57-4.12L8.52 44V11.44l19 1.35A4.16 4.16 0 0 1 31.71 17zm.48 0a4.16 4.16 0 0 1 3.57-4.12L55.38 44V11.44l-19 1.35A4.16 4.16 0 0 0 32.19 17z" fill="none" stroke-miterlimit="10" stroke="#c8c8c8" stroke-width="1.25"/>			
+                                            <circle cx="31.96" cy="29.13" r="8.8" class="has-fill-current-color" fill="#e82127"/>			
+                                            <path stroke="#fff" stroke-width="1.85" fill="none" stroke-miterlimit="10" d="M27.12 29.46l3.24 3.25 5.65-7.16"/>		  
+                                        </g>		
+                                    </svg>		
+                                </div>
+                            </div>
+                            <div class="column is-9 has-padding-top-extra-small">
+                                <p class="is-size-extra-small has-margin-none has-text-subtle is-uppercase">Learn</p>
+                                <h2 class="is-size-h6 has-margin-none">Starting with ETL</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="column is-4-tablet is-4-desktop">
+                    <a href="starting-with-etl/best-practices.html" class="box is-block is-full-height has-padding-medium has-heavy-shadow-hover has-border-high-contrast-hover has-padding-large is-undecorated" data-linktype="relative-path">
+                        <div class="columns">
+                            <div class=" is-hidden-mobile">
+                                <div class="image is-max-64x64 has-text-etl">		
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="64" width = "64" viewBox="0 0 64 64" preserveAspectRatio="xMidYMin meet">			
+                                        <g data-name="Layer 1">				
+                                            <path class="has-stroke-current-color" fill="none" stroke="#e82127" stroke-width="3.25px" stroke-miterlimit="10" d="M17.05 6.77a5.87 5.87 0 0 0-4.45 1.47c-.92 1-1.39 2.66-1.39 5V21q0 8.71-5.58 10.91v.14q5.58 2.31 5.58 11.42V51q0 6.35 5.84 6.34M47 57.23a5.87 5.87 0 0 0 4.45-1.47c.92-1 1.39-2.66 1.39-5V43q0-8.72 5.58-10.91v-.14q-5.58-2.31-5.58-11.42V13q0-6.35-5.84-6.34"/>				
+                                            <path opacity=".5" fill="#e3e3e3" d="M17.13 13.91h29.75v9.52H17.13z"/>				
+                                            <path fill="none" stroke="#c8c8c8" stroke-width="1.25px" stroke-miterlimit="10" d="M17.13 13.91h29.75v9.52H17.13z"/>				
+                                            <path fill="#c8c8c8" opacity=".5" d="M17.13 27.24h29.75v9.52H17.13z"/>				
+                                            <path fill="none" stroke="#c8c8c8" stroke-width="1.25px" stroke-miterlimit="10" d="M17.13 27.24h29.75v9.52H17.13z"/>				
+                                            <path fill="#acacac" opacity=".5" d="M17.13 40.56h29.75v9.52H17.13z"/>				
+                                            <path fill="none" stroke="#c8c8c8" stroke-width="1.25px" stroke-miterlimit="10" d="M17.13 40.56h29.75v9.52H17.13z"/>			
+                                        </g>		
+                                    </svg>		
+                                </div>
+                            </div>
+                            <div class="column is-9 has-padding-top-extra-small">
+                                <p class="is-size-extra-small has-margin-none has-text-subtle is-uppercase">Concept</p>
+                                <h2 class="is-size-h6 has-margin-none">Best Practices with ETL</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+        </div>
+    </div>
+</section>
+
+<section class="has-background-alternating-grey has-padding-top-extra-large has-padding-bottom-extra-large">
+    <div class="uhf-container">
+            <h2 class="has-margin-top-none ">Getting Started with ETL</h2>
+            <p class="has-margin-top-none has-margin-bottom-large">An introductory guide for performing basic ETL tasks on a variety of data sources: web, on-premise, relational databases, big-data, documents, files, and more.</p>
+        <div class="columns is-multiline">
+
+            <div class="column is-6-tablet is-3-desktop">
+                <div class="box is-full-height has-padding-large has-heavy-shadow-hover">
+                    <h3 class="is-size-h6 has-margin-top-none has-margin-bottom-small">Calendar Tables & Dates</h3>
+                        <p class="is-size-small has-line-height-reset has-margin-top-none has-margin-bottom-medium">Learn how to work with Date Tables</p>
+                    <ul class="has-line-height-reset has-margin-left-none has-margin-bottom-none has-margin-top-extra-small">
+
+                        <li class="is-unstyled has-margin-bottom-small">
+                            <a href="starting-with-etl/554-calendar.html" class="has-flex-justify-content-start is-flex has-text-wrap is-size-small is-hover-underline" data-linktype="relative-path">
+                                <span class="is-size-small has-margin-right-small"><i class="fas fa-file-alt"></i></span>
+                                <span>Creating a 554 Calendar</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="column is-6-tablet is-3-desktop">
+                <div class="box is-full-height has-padding-large has-heavy-shadow-hover">
+                    <h3 class="is-size-h6 has-margin-top-none has-margin-bottom-small">Quality Checking & Maintenance</h3>
+                        <p class="is-size-small has-line-height-reset has-margin-top-none has-margin-bottom-medium">Use ETL to Quality Check your data</p>
+                    <ul class="has-line-height-reset has-margin-left-none has-margin-bottom-none has-margin-top-extra-small">
+
+                        <li class="is-unstyled has-margin-bottom-small">
+                            <a href="starting-with-etl/auditing-tool.html" class="has-flex-justify-content-start is-flex has-text-wrap is-size-small is-hover-underline" data-linktype="relative-path">
+                                <span class="is-size-small has-margin-right-small"><i class="fas fa-file-alt"></i></span>
+                                <span>Creating an Auditing Tool</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="tools" class="has-background-alternating-grey has-padding-top-extra-large has-padding-bottom-extra-large">
+    <div class="uhf-container has-padding-bottom-large">
+            <h2 class="has-margin-top-none ">Community Resources</h2>
+            <p class="has-margin-top-none has-margin-bottom-large">Connect with other ETL users</p>
+        <div class="columns is-multiline">
+                <div class="column is-4-tablet is-4-desktop">
+                    <a href="https://stackoverflow.com/questions/tagged/powerquery" class="box has-body-background-dark is-full-height has-padding-none has-heavy-shadow-hover has-border-high-contrast-hover is-undecorated no_icon" target="_blank" data-linktype="external">
+                        <div class="columns is-mobile has-margin-none is-full-height">
+                            <div class="column is-narrow is-flex has-flex-align-items-center is-full-height">
+                                <div class="image is-32x32">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path fill="#bcbbbb" d="M52 58V41h6v23H7V41h6v17h39z"/><path d="M18.91 39.87l27.56 5.76 1.17-5.54-27.56-5.76zm3.65-13.12l25.51 11.88 2.33-5.1-25.51-12zm7.07-12.54l21.65 18 3.57-4.3-21.65-18zm14-13.34l-4.52 3.35 16.77 22.6 4.52-3.35zM18 53h29v-6H18z" fill="#f48023"/></svg>
+                                </div>
+                            </div>
+                            <div class="column has-flex-align-self-center">
+                                <h3 class="is-size-h6 has-margin-none has-text-weight-semibold">Stack Overflow</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="column is-4-tablet is-4-desktop">
+                    <a href="https://docs.microsoft.com/en-us/power-query/" class="box has-body-background-dark is-full-height has-padding-none has-heavy-shadow-hover has-border-high-contrast-hover is-undecorated no_icon" target="_blank" data-linktype="external">
+                        <div class="columns is-mobile has-margin-none is-full-height">
+                            <div class="column is-narrow is-flex has-flex-align-items-center is-full-height">
+                                <div class="image is-32x32">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path fill="#fff" d="M55.5 20.21V63.5h-47V.5h26.3l20.7 19.71z"/><path fill="#80def9" d="M55.5 20.5h-21V.5l21 20z"/><path d="M34.88 1H10a1 1 0 00-1 1v60a1 1 0 001 1h44a1 1 0 001-1V20.37z" stroke="#556a8a" stroke-miterlimit="10" stroke-width="2" fill="#fff"/><path fill="#e5e5e5" d="M10 2h16v60H10z"/><path d="M18.6 23.41V32h-1.36v-6.93a4.33 4.33 0 01-.79.45 6.54 6.54 0 01-1 .33v-1.16l.66-.23q.32-.12.62-.28t.62-.34q.31-.19.65-.43zM20.85 44h-5.28v-.65a2.44 2.44 0 01.11-.75 3 3 0 01.3-.66 3.66 3.66 0 01.44-.58q.25-.27.54-.53l.59-.49.59-.48q.27-.23.49-.45A3 3 0 0019 39a2.06 2.06 0 00.25-.5 1.76 1.76 0 00.09-.57 1.52 1.52 0 00-.1-.58 1.13 1.13 0 00-.29-.42 1.23 1.23 0 00-.44-.25 1.71 1.71 0 00-.55-.08 2.54 2.54 0 00-1 .24 3.59 3.59 0 00-1 .72v-1.34a4.29 4.29 0 01.52-.34 3.55 3.55 0 01.54-.24 3.36 3.36 0 01.59-.14 4.44 4.44 0 01.66 0 3.35 3.35 0 011 .15A2.2 2.2 0 0120 36a1.93 1.93 0 01.51.72 2.6 2.6 0 01.18 1 3.1 3.1 0 01-.13.92 3 3 0 01-.36.76 3.94 3.94 0 01-.56.67q-.33.32-.73.65l-.68.54q-.34.26-.61.51a2.85 2.85 0 00-.44.5.89.89 0 00-.17.5h3.79zm-5.13 11.69v-1.28a2.9 2.9 0 001.85.65 2.16 2.16 0 001.34-.38 1.23 1.23 0 00.5-1q0-1.43-2.19-1.43h-.65v-1.12h.62q1.94 0 1.94-1.35t-1.51-1.24a2.48 2.48 0 00-1.59.6v-1.2a4.06 4.06 0 012-.48 2.71 2.71 0 011.79.56 1.79 1.79 0 01.67 1.44 2.05 2.05 0 01-1.69 2.13 2.21 2.21 0 011.44.64 1.89 1.89 0 01.53 1.37 2.24 2.24 0 01-.77 1.85 3.43 3.43 0 01-2.24.69 3.82 3.82 0 01-2.04-.45z" fill="#556a8a"/><path d="M34 1v20h21m-28 7h20M27 40h20M27 52h20" fill="none" stroke="#556a8a" stroke-miterlimit="10" stroke-width="2"/></svg>
+                                </div>
+                            </div>
+                            <div class="column has-flex-align-self-center">
+                                <h3 class="is-size-h6 has-margin-none has-text-weight-semibold">MS Docs - Power Query</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="column is-4-tablet is-4-desktop">
+                    <a href="https://docs.microsoft.com/en-us/powerquery-m/" class="box has-body-background-dark is-full-height has-padding-none has-heavy-shadow-hover has-border-high-contrast-hover is-undecorated no_icon" target="_blank" data-linktype="external">
+                        <div class="columns is-mobile has-margin-none is-full-height">
+                            <div class="column is-narrow is-flex has-flex-align-items-center is-full-height">
+                                <div class="image is-32x32">
+                                    <svg id="ICONS-64x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><defs><style>.cls-4{fill:none;stroke:#556a8a;stroke-miterlimit:10;stroke-width:2px}</style></defs><path d="M47.83 15.37l-.71-.71a4 4 0 00-5.66 0L18.18 38 15 47.5l9.55-3.18L47.83 21a4 4 0 000-5.63z" fill="#fff"/><path transform="rotate(-45 32.736 30.77)" fill="#e5e5e5" d="M16.23 29.27h33v3h-33z"/><path d="M24.43 43.74l-.15.14-8.49 2.83 2.83-8.49.15-.14 5.66 5.66zM48.5 18.2a3.48 3.48 0 01-1 2.48L45.15 23l-5.66-5.66L41.82 15a3.51 3.51 0 015 0l.71.71a3.45 3.45 0 01.97 2.49z" fill="#2bc7f4"/><path class="cls-4" d="M47.83 15.37l-.71-.71a4 4 0 00-5.66 0L18.18 38 15 47.5l9.55-3.18L47.83 21a4 4 0 000-5.63z"/><path d="M48 57.51h.52a6 6 0 004.09-1.79c1-1 1.38-2.74 1.38-5.85v-9.6a11.68 11.68 0 012.1-6.56 5.9 5.9 0 013.2-2.51C55.78 30 54 27 54 22.33v-9.76c0-3.13-.42-4.9-1.4-5.91a6.24 6.24 0 00-4.17-1.8h-.49l.15-2h.51A8.26 8.26 0 0154 5.27c1.37 1.41 2 3.59 2 7.3v9.76c0 4.21 1.7 6.58 5.19 7.24l.81.15v2.88l-.78.15a4.63 4.63 0 00-3.38 2A9.82 9.82 0 0056 40.22v9.6c0 3.69-.58 5.85-2 7.25a7.86 7.86 0 01-5.29 2.38h-.48zm-32 0h-.52a6 6 0 01-4.09-1.79c-1-1-1.38-2.74-1.38-5.85v-9.6a11.68 11.68 0 00-2.1-6.56 5.9 5.9 0 00-3.2-2.51C8.22 30 10 27 10 22.33v-9.76c0-3.13.42-4.9 1.4-5.91a6.24 6.24 0 014.17-1.8h.49l-.15-2h-.51A8.26 8.26 0 0010 5.27c-1.37 1.41-2 3.59-2 7.3v9.76c0 4.21-1.7 6.58-5.19 7.24l-.81.16v2.87l.78.15a4.63 4.63 0 013.38 2A9.82 9.82 0 018 40.22v9.6c0 3.69.58 5.85 2 7.25a7.86 7.86 0 005.29 2.38h.48z" fill="#556a8a"/><path class="cls-4" d="M18.72 37.65l5.9 5.9"/></svg>
+                                </div>
+                            </div>
+                            <div class="column has-flex-align-self-center">
+                                <h3 class="is-size-h6 has-margin-none has-text-weight-semibold">‘M’ Language</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="column is-4-tablet is-4-desktop">
+                    <a href="https://radacad.com/category/power-query" class="box has-body-background-dark is-full-height has-padding-none has-heavy-shadow-hover has-border-high-contrast-hover is-undecorated no_icon" target="_blank" data-linktype="external">
+                        <div class="columns is-mobile has-margin-none is-full-height">
+                            <div class="column is-narrow is-flex has-flex-align-items-center is-full-height">
+                                <div class="image is-32x32">
+                                    <img src="/docs/logos/i_radacad.png" alt="" width="32" height="32">
+                                </div>
+                            </div>
+                            <div class="column has-flex-align-self-center">
+                                <h3 class="is-size-h6 has-margin-none has-text-weight-semibold">Radacad</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="column is-4-tablet is-4-desktop">
+                    <a href="https://community.powerbi.com/t5/Power-Query/bd-p/power-bi-services" class="box has-body-background-dark is-full-height has-padding-none has-heavy-shadow-hover has-border-high-contrast-hover is-undecorated no_icon" target="_blank" data-linktype="external">
+                        <div class="columns is-mobile has-margin-none is-full-height">
+                            <div class="column is-narrow is-flex has-flex-align-items-center is-full-height">
+                                <div class="image is-32x32">
+                                    <svg id="ICONS-64x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><defs><style>.cls-6{fill:#fff}.cls-3{fill:none}.cls-3,.cls-6{stroke:#556a8a;stroke-miterlimit:10;stroke-width:2px}</style></defs><path d="M59.13 5H4.88A3.88 3.88 0 001 8.86v37.63A3.59 3.59 0 004.88 50H13v11l11-11h34.81c2.13 0 4.19-1.39 4.19-3.51V8.86A3.88 3.88 0 0059.13 5z" fill="#fff"/><path d="M63 9v22L37 5h22a4 4 0 014 4z" fill="#e5e5e5"/><path class="cls-3" d="M59.13 5H4.88A3.88 3.88 0 001 8.86v37.63A3.59 3.59 0 004.88 50H13v11l11-11h34.81c2.13 0 4.19-1.39 4.19-3.51V8.86A3.88 3.88 0 0059.13 5z"/><path fill="none" d="M0 0h64v64H0z"/><circle cx="31" cy="17" r="6" stroke="#556a8a" stroke-miterlimit="10" stroke-width="2" fill="#e5e5e5"/><path class="cls-3" d="M21.5 32a9.26 9.26 0 019.5-9 9.26 9.26 0 019.5 9"/><circle class="cls-6" cx="44" cy="29" r="6"/><path class="cls-3" d="M34.5 44a9.26 9.26 0 019.5-9 9.26 9.26 0 019.5 9"/><circle class="cls-6" cx="18" cy="29" r="6"/><path class="cls-3" d="M8.5 44a9.26 9.26 0 019.5-9 9.26 9.26 0 019.5 9"/></svg>
+                                </div>
+                            </div>
+                            <div class="column has-flex-align-self-center">
+                                <h3 class="is-size-h6 has-margin-none has-text-weight-semibold">MS Power Query Community</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="column is-4-tablet is-4-desktop">
+                    <a href="https://www.facebook.com/groups/PowerQuery/" class="box has-body-background-dark is-full-height has-padding-none has-heavy-shadow-hover has-border-high-contrast-hover is-undecorated no_icon" target="_blank" data-linktype="external">
+                        <div class="columns is-mobile has-margin-none is-full-height">
+                            <div class="column is-narrow is-flex has-flex-align-items-center is-full-height">
+                                <div class="image is-32x32">
+                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 455.73 455.73" style="enable-background:new 0 0 455.73 455.73;" xml:space="preserve"><path style="fill:#3A559F;" d="M0,0v455.73h242.704V279.691h-59.33v-71.864h59.33v-60.353c0-43.893,35.582-79.475,79.475-79.475 h62.025v64.622h-44.382c-13.947,0-25.254,11.307-25.254,25.254v49.953h68.521l-9.47,71.864h-59.051V455.73H455.73V0H0z"/></svg>
+                                </div>
+                            </div>
+                            <div class="column has-flex-align-self-center">
+                                <h3 class="is-size-h6 has-margin-none has-text-weight-semibold">Facebook - Power Query</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+        </div>
+    </div>
+</section>
+
+<section id="additional-content" class="has-background-alternating-grey has-padding-top-extra-large has-padding-bottom-extra-large">
+    <div class="uhf-container">
+                <h2 class="has-margin-top-none has-margin-bottom-large">Related Technologies</h2>
+                <p class="has-margin-top-none has-margin-bottom-large">Learn about related technologies, and other ETL vendors</p>
+            <div class="columns is-multiline">
+            </div>
+            <div class="columns is-multiline">
+
+                <div class="column is-4-tablet is-4-desktop">	
+                    <div class="box has-margin-none is-full-height has-padding-large has-rising-shadow-hover">
+                            <div class="image is-48x48 has-margin-bottom-small" data-linktype="absolute-path"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path d="M54 36h-5V15l3-4-3-10h-4l-3 10 3 4v21h-5v6h3c0 2-2 4-3 4.08V58.5c0 3.3 2 5.5 4 5.5h6c2 0 4-2.7 4-6V46c-1 0-3-2-3-4h3z" fill="#2bc7f4"/><path d="M44 45h2v17h-2zm4 0h2v17h-2z" fill="#fff"/><path d="M34 13a12 12 0 00-7-10.91V10l-5 4-5-4V2.09a12 12 0 000 21.81V59a4 4 0 004 4h1a4 4 0 004-4V24.3A12 12 0 0034 13z" stroke="#556a8a" stroke-miterlimit="10" stroke-width="2" fill="#fff"/><path fill="#e5e5e5" d="M18 53h7v5h-7z"/></svg> </div>
+                        <h3 class="is-size-h6 has-margin-none">ETL Technologies</h3>
+                        <ul class="has-line-height-reset has-margin-left-none has-margin-bottom-none has-margin-top-extra-small">
+                            <li class="is-unstyled has-margin-bottom-small">
+                                <a href="https://docs.microsoft.com/en-gb/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365" target="_blank" class="is-block is-size-small is-hover-underline no_icon" data-linktype="absolute-path">
+                                    MS Dataflows
+                                </a>
+                            </li>
+                            <li class="is-unstyled has-margin-bottom-small">
+                                <a href="https://cloud.google.com/learn/what-is-etl" class="is-block is-size-small is-hover-underline no_icon" target="_blank" data-linktype="absolute-path">
+                                    Google ETL 
+                                </a>
+                            </li>
+                            <li class="is-unstyled has-margin-bottom-small">
+                                <a href="https://docs.aws.amazon.com/glue/index.html" class="is-block is-size-small is-hover-underline no_icon" target="_blank" data-linktype="absolute-path">
+                                    AWS Glue 
+                                </a>
+                            </li>
+                            <li class="is-unstyled has-margin-bottom-small">
+                                <a href="https://www.ibm.com/cloud/learn/etl" class="is-block is-size-small is-hover-underline no_icon" target="_blank" data-linktype="absolute-path">
+                                    IBM ETL 
+                                </a>
+                            </li>
+                            <li class="is-unstyled has-margin-bottom-small">
+                                <a href="https://pypi.org/project/petl/" class="is-block is-size-small is-hover-underline no_icon" target="_blank" data-linktype="absolute-path">
+                                    Python ETL (PETL)
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="column is-4-tablet is-4-desktop">	
+                    <div class="box has-margin-none is-full-height has-padding-large has-rising-shadow-hover">
+                            <div class="image is-48x48 has-margin-bottom-small" data-linktype="absolute-path"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path d="M3.11 34.63l4.47.67a17.31 17.31 0 00.46 3l-3.69 2.42a1.17 1.17 0 00-.66 1.59L4.8 45a1 1 0 001.43.49l4.49-.94L12.14 47l-2.58 3.5a1.19 1.19 0 000 1.6l2.22 2.26a1.44 1.44 0 001.6 0l3.53-2.53c.8.48 1.76 1.12 2.55 1.61l-1 4.47a1.1 1.1 0 00.62 1.29l2.72 1.13a1 1 0 001.45-.46l2.43-4a9.35 9.35 0 002.87.67l.62 4.46a1.1 1.1 0 001.11 1.13l3-.15c.48.16 1-.32 1.12-.79l.84-4.64a9.64 9.64 0 002.92-.55l2.38 4a1.59 1.59 0 001.43.49l2.89-1.26a1.09 1.09 0 00.65-1.27l-1.1-4.34a5.66 5.66 0 00.62-.42c.13-.09.27-.19.4-.3.47-.35.94-.74 1.4-1l3.66 2.74a1 1 0 001.44-.15l1.34-1.32.75-.75h0a1 1 0 00.14-1.41l-2.69-3.7a13.13 13.13 0 001.78-2.71l4.46 1.3a1.42 1.42 0 001.49-.9l1.13-2.72a1.39 1.39 0 00-.62-1.6l-3.83-2.27c.33-1 .33-1.92.66-2.87L61 35a1.42 1.42 0 001-1.28v-2.89a1.36 1.36 0 00-.93-1.29L56.42 29a18.27 18.27 0 00-.61-3.21l4-2.37a1 1 0 00.5-1.44l-1.11-2.72a1.49 1.49 0 00-1.43-.81l-4.5 1.25c-.47-.8-.94-1.61-1.42-2.41l2.75-3.66a1.48 1.48 0 00-.16-1.44L52.23 10a1.2 1.2 0 00-1.43-.17l-3.7 2.67c-.8-.5-1.75-1.14-2.55-1.62l1-4.48a1.07 1.07 0 00-.62-1.28L42 3.82a1.38 1.38 0 00-1.45.47l-2.22 3.84c-1 0-1.92-.33-2.88-.35L35 3.14a1.4 1.4 0 00-1.28-1l-3-.18a1.87 1.87 0 00-1.12 1.1l-.68 4.49c-1.12.15-2.08.47-3.2.61l-2.24-3.81A1.11 1.11 0 0022 3.86L19.32 5a1.3 1.3 0 00-.82 1.4l1.1 4.33a10.34 10.34 0 00-2.41 1.75l-3.67-2.75a1.07 1.07 0 00-1.61 0L10 11.63l-.17.16a1.09 1.09 0 000 1.6l2.69 3.7a7.16 7.16 0 00-1.37 1.85l-.12.22c-.1.2-.2.41-.29.63l-4.47-1.3a1.09 1.09 0 00-1.27.62L3.68 22a1.63 1.63 0 00.47 1.45l4 2.42a7.93 7.93 0 00-.51 2.72L3 29.34c-.47.17-1 .64-1 1v3.2a1.08 1.08 0 001.11 1.09z" stroke="#556a8a" fill="#fff" stroke-miterlimit="10" stroke-width="2"/><path d="M18.16 26.3A15 15 0 1117 32.15a14.82 14.82 0 011.16-5.85z" stroke="#2bc7f4" fill="#fff" stroke-miterlimit="10" stroke-width="2"/><path d="M41.19 25.45l-2.83 2.83-2.4.42.28-2.55 2.83-2.83a5.11 5.11 0 00-5.09.85 4.24 4.24 0 00-.57 4.83l-9.69 9.69a1.44 1.44 0 00.21 2.05 1.26 1.26 0 001.91.07l9.69-9.69a4.24 4.24 0 004.81-.57 5.11 5.11 0 00.85-5.1z" fill="#556a8a"/><path d="M31.39 31.92l-3.73-3.73-.71-2.12-3.54-2.12-1.41 1.4 2.12 3.54 2.12.71L30 33.33a2 2 0 00.51 1.92l6.36 6.36a2 2 0 102.83-2.83l-6.36-6.36a2 2 0 00-1.95-.5z" fill="#2bc7f4"/></svg> </div>
+                        <h3 class="is-size-h6 has-margin-none">ETL Vendors</h3>
+                        <ul class="has-line-height-reset has-margin-left-none has-margin-bottom-none has-margin-top-extra-small">
+                            <li class="is-unstyled has-margin-bottom-small">
+                                <a href="https://docs.microsoft.com/en-us/sql/integration-services/" target="_blank" class="is-block is-size-small is-hover-underline no_icon" data-linktype="absolute-path">
+                                    MS SSIS
+                                </a>
+                            </li>
+                            <li class="is-unstyled has-margin-bottom-small">
+                                <a href="https://www.informatica.com/products/data-integration.html" class="is-block is-size-small is-hover-underline no_icon" target="_blank" data-linktype="absolute-path">
+                                    Informatica
+                                </a>
+                            </li>
+                            <li class="is-unstyled has-margin-bottom-small">
+                                <a href="https://www.talend.com/" class="is-block is-size-small is-hover-underline no_icon" target="_blank" data-linktype="absolute-path">
+                                    Talend 
+                                </a>
+                            </li>
+                            <li class="is-unstyled has-margin-bottom-small">
+                                <a href="https://panoply.io/" class="is-block is-size-small is-hover-underline no_icon" target="_blank" data-linktype="absolute-path">
+                                    Panoply 
+                                </a>
+                            </li>
+                            <li class="is-unstyled has-margin-bottom-small">
+                                <a href="https://www.stitchdata.com/" class="is-block is-size-small is-hover-underline no_icon" target="_blank" data-linktype="absolute-path">
+                                    Stitch
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="column is-4-tablet is-4-desktop">	
+                    <div class="box has-margin-none is-full-height has-padding-large has-rising-shadow-hover">
+                            <div class="image is-48x48 has-margin-bottom-small" data-linktype="absolute-path"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path d="M3.11 34.63l4.47.67a17.31 17.31 0 00.46 3l-3.69 2.42a1.17 1.17 0 00-.66 1.59L4.8 45a1 1 0 001.43.49l4.49-.94L12.14 47l-2.58 3.5a1.19 1.19 0 000 1.6l2.22 2.26a1.44 1.44 0 001.6 0l3.53-2.53c.8.48 1.76 1.12 2.55 1.61l-1 4.47a1.1 1.1 0 00.62 1.29l2.72 1.13a1 1 0 001.45-.46l2.43-4a9.35 9.35 0 002.87.67l.62 4.46a1.1 1.1 0 001.11 1.13l3-.15c.48.16 1-.32 1.12-.79l.84-4.64a9.64 9.64 0 002.92-.55l2.38 4a1.59 1.59 0 001.43.49l2.89-1.26a1.09 1.09 0 00.65-1.27l-1.1-4.34a5.66 5.66 0 00.62-.42c.13-.09.27-.19.4-.3.47-.35.94-.74 1.4-1l3.66 2.74a1 1 0 001.44-.15l1.34-1.32.75-.75h0a1 1 0 00.14-1.41l-2.69-3.7a13.13 13.13 0 001.78-2.71l4.46 1.3a1.42 1.42 0 001.49-.9l1.13-2.72a1.39 1.39 0 00-.62-1.6l-3.83-2.27c.33-1 .33-1.92.66-2.87L61 35a1.42 1.42 0 001-1.28v-2.89a1.36 1.36 0 00-.93-1.29L56.42 29a18.27 18.27 0 00-.61-3.21l4-2.37a1 1 0 00.5-1.44l-1.11-2.72a1.49 1.49 0 00-1.43-.81l-4.5 1.25c-.47-.8-.94-1.61-1.42-2.41l2.75-3.66a1.48 1.48 0 00-.16-1.44L52.23 10a1.2 1.2 0 00-1.43-.17l-3.7 2.67c-.8-.5-1.75-1.14-2.55-1.62l1-4.48a1.07 1.07 0 00-.62-1.28L42 3.82a1.38 1.38 0 00-1.45.47l-2.22 3.84c-1 0-1.92-.33-2.88-.35L35 3.14a1.4 1.4 0 00-1.28-1l-3-.18a1.87 1.87 0 00-1.12 1.1l-.68 4.49c-1.12.15-2.08.47-3.2.61l-2.24-3.81A1.11 1.11 0 0022 3.86L19.32 5a1.3 1.3 0 00-.82 1.4l1.1 4.33a10.34 10.34 0 00-2.41 1.75l-3.67-2.75a1.07 1.07 0 00-1.61 0L10 11.63l-.17.16a1.09 1.09 0 000 1.6l2.69 3.7a7.16 7.16 0 00-1.37 1.85l-.12.22c-.1.2-.2.41-.29.63l-4.47-1.3a1.09 1.09 0 00-1.27.62L3.68 22a1.63 1.63 0 00.47 1.45l4 2.42a7.93 7.93 0 00-.51 2.72L3 29.34c-.47.17-1 .64-1 1v3.2a1.08 1.08 0 001.11 1.09z" stroke="#556a8a" fill="#fff" stroke-miterlimit="10" stroke-width="2"/><path d="M18.16 26.3A15 15 0 1117 32.15a14.82 14.82 0 011.16-5.85z" stroke="#2bc7f4" fill="#fff" stroke-miterlimit="10" stroke-width="2"/><path d="M41.19 25.45l-2.83 2.83-2.4.42.28-2.55 2.83-2.83a5.11 5.11 0 00-5.09.85 4.24 4.24 0 00-.57 4.83l-9.69 9.69a1.44 1.44 0 00.21 2.05 1.26 1.26 0 001.91.07l9.69-9.69a4.24 4.24 0 004.81-.57 5.11 5.11 0 00.85-5.1z" fill="#556a8a"/><path d="M31.39 31.92l-3.73-3.73-.71-2.12-3.54-2.12-1.41 1.4 2.12 3.54 2.12.71L30 33.33a2 2 0 00.51 1.92l6.36 6.36a2 2 0 102.83-2.83l-6.36-6.36a2 2 0 00-1.95-.5z" fill="#2bc7f4"/></svg> </div>
+                        <h3 class="is-size-h6 has-margin-none">ETL Vendors</h3>
+                        <ul class="has-line-height-reset has-margin-left-none has-margin-bottom-none has-margin-top-extra-small">
+                            <li class="is-unstyled has-margin-bottom-small">
+                                <a href="https://azure.microsoft.com/en-us/services/data-factory/" class="is-block is-size-small is-hover-underline no_icon" target="_blank" data-linktype="absolute-path">
+                                    Azure Data Factory 
+                                </a>
+                            </li>
+                            <li class="is-unstyled has-margin-bottom-small">
+                                <a href="https://www.fivetran.com/" target="_blank" class="is-block is-size-small is-hover-underline no_icon" data-linktype="absolute-path">
+                                    Fivetran
+                                </a>
+                            </li>
+                            <li class="is-unstyled has-margin-bottom-small">
+                                <a href="https://www.blendo.co/" class="is-block is-size-small is-hover-underline no_icon" target="_blank" data-linktype="absolute-path">
+                                    Blendo
+                                </a>
+                            </li>
+                            <li class="is-unstyled has-margin-bottom-small">
+                                <a href="https://www.alooma.com/" class="is-block is-size-small is-hover-underline no_icon" target="_blank" data-linktype="absolute-path">
+                                    Alooma
+                                </a>
+                            </li>
+                            <li class="is-unstyled has-margin-bottom-small">
+                                <a href="https://www.matillion.com/" class="is-block is-size-small is-hover-underline no_icon" target="_blank" data-linktype="absolute-path">
+                                    Matillion
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+    </div>
+</section>
+
+<section id="additional-content" class="has-background-alternating-grey has-padding-top-extra-large has-padding-bottom-extra-large">
+    <div class="uhf-container">
+        <h2 class="has-margin-top-none has-margin-bottom-large">ETL Guides</h2>
+        <p class="has-margin-top-none has-margin-bottom-large">Develop your ETL skills with some introductory ETL guides</p>
+
+        <div class="columns is-multiline">
+
+            <div class="column has-padding-large is-6-tablet is-4-desktop is-flex has-flex-justify-content-center">	
+                <div class="box-transparent is-mobile has-margin-none is-full-height has-rising-shadow-hover-transparent">
+                    <a href="starting-with-etl/overview.html" class="image" data-linktype="absolute-path">
+                        <div class="is-narrow is-flex has-flex-justify-content-center">
+                            <div class="image">
+                                <img src="../guidepics/starting-with-etl.jpg">
+                            </div>
+                        </div>
+                    </a>
+                    <div class="text-wrapper">
+                        <span class="eyebrow">Guide</span>
+                        <a href="starting-with-etl/overview.html" class="title-link">
+                            <h3 class="is-size-h4 has-margin-none">Starting with ETL</h3>
+                        </a>
+                    </div> 
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+  </div>
+  <!-- End of Content -->
+
+
+<!-- Different Structure depending on 'Layout' Property of Content-->
+<!-- ************************************************************************************************************ -->
+
+
+
+
+<!-- ************************************************************************************************************ -->
+
+<!-- End of Main Container -->
+			<!-- Site Feedback -->
+
+<div id="feedback" class="site-feedback">
+    <div class="container">
+        <h2 class="feedback-panel__title">Feedback</h2>
+        <p class="feedback-panel__body">Submit and view feedback</p>
+            <a class="btn feedback-submit__btn" href="" target="_blank">
+                <span class="icon-is-medium">
+                    <i class="fab fa-github fa-2x"></i>
+                </span>
+                <span>Submit</span>
+            </a>
+            <a class="btn feedback-view__btn" href="" target="_blank">
+                <span class="icon-is-medium">
+                    <i class="fab fa-github fa-2x"></i>
+                </span>
+                <span>View</span>
+            </a>
+    </div>
+</div>
+
+<!-- End of Feedback -->
+
+
+
+
+   
+
+			<!-- Site Footer --> 
+
+<div class="footer">
+    <div class="container">
+
+        <div class="">
+            <a class="site-footer__logo-link" href="https://startech-enterprises.github.io/docs/">
+                <img class="site-footer__logo" src="/../dreamstar/logos/dream-star-logo-footer.png">
+            </a>
+        </div>
+
+        <div class="footer__row row">
+
+            <div class="footer__column col-sm-4 col-lg-2">
+                <h4 class="footer__title">
+                    <a class="footer__title-link" href="/../dreamstar/careers/">Industry</a>
+                </h4>
+                <ul class="footer-list c">
+                    <li class="footer-list__item">
+                        <a class="footer-list__link" href="/../dreamstar/careers/job-profiles/">Job Profiles</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__link" href="/../dreamstar/careers/first-day-on-set/">First day on set</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__link" href="/../dreamstar/careers/how-to-get-in/">How to get in</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__link" href="/../dreamstar/careers/building-your-portfolio/">Portfolio</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__link" href="/../dreamstar/careers/how-to-network-well/">Network</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__link" href="/../dreamstar/careers/how-to-approach-employers/">Approaching employers</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__link" href="/../dreamstar/careers/freelancers/">Freelancers</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__link" href="/../dreamstar/careers/career-resources/">Careers resources</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__column col-sm-4 col-lg-2">
+                <h4 class="footer__title">
+                    <a class="footer__title-link" href="">Finance</a>
+                </h4>
+            </div>
+
+            <div class="footer__column col-sm-4 col-lg-2">
+                <h4 class="footer__title">
+                    <a class="footer__title-link" href="/../dreamstar/insight/">Insight</a>
+                </h4>
+                <ul class="footer-list c">
+                    <li class="footer-list__item">
+                        <a class="footer-list__link" href="/../dreamstar/insight/news/">News</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__column col-sm-4 col-lg-2">
+                <h4 class="footer__title">
+                    <a class="footer__title-link" href="">About</a>
+                </h4>
+            </div>
+
+        </div>
+
+        <div class="c">
+
+        </div>
+
+        <ul class="footer-partner-logos">
+                <li class="footer-partner-logos__item">
+                    <a class="footer-partner-logos__link" href="" target="_blank;">
+                        <img class="footer-partner-logos__img" src="/../dreamstar/assets/images/footer/BFI.png" alt="BFI" width="115">
+                    </a>
+                </li>
+                <li class="footer-partner-logos__item">
+                    <a class="footer-partner-logos__link" href="" target="_blank;">
+                        <img class="footer-partner-logos__img" src="/../dreamstar/assets/images/footer/ArtsCouncil.png" alt="Arts Council" width="115">
+                    </a>
+                </li>
+                <li class="footer-partner-logos__item">
+                    <a class="footer-partner-logos__link" href="" target="_blank;">
+                        <img class="footer-partner-logos__img" src="/../dreamstar/assets/images/footer/BBC.png" alt="BBC" width="60">
+                    </a>
+                </li>
+                <li class="footer-partner-logos__item">
+                    <a class="footer-partner-logos__link" href="" target="_blank;">
+                        <img class="footer-partner-logos__img" src="/../dreamstar/assets/images/footer/Channel4.png" alt="Channel 4" width="28">
+                    </a>
+                </li>
+                <li class="footer-partner-logos__item">
+                    <a class="footer-partner-logos__link" href="" target="_blank;">
+                        <img class="footer-partner-logos__img" src="/../dreamstar/assets/images/footer/Channel5.png" alt="Channel 5" width="25">
+                    </a>
+                </li>
+        </ul>
+
+        <ul class="footer-social">
+            <li class="footer-social__item">
+                <a class="footer-social__link" href="/" target="_blank;">
+                    <svg class="icon--m">
+                        <use xlink:href="#facebook-f">
+                            <symbol id="facebook-f" viewBox="0 0 264 512">
+                                <path fill="currentColor" d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"></path>
+                            </symbol>
+                        </use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+
+        <div class="c">
+
+        </div>
+
+        <ul class="footer-contact c">
+            <li class="footer-contact__item">
+                Dream Star Entertainment, London, United Kingdom
+            </li>
+
+            <li class="footer-contact__item">
+                <a class="footer-contact__link" href="" target="_blank;">
+                    tbc@tbc.com
+                </a>
+            </li>
+            <li class="footer-contact__item footer-contact__item--last">
+                Tel: +44 (0) ...TBC
+            </li>
+        </ul>
+
+    </div>
+
+</div>
+
+<!-- End of Site Footer -->	
+	</body>
+
+	<!-- Main JavaScript Files -->
+	<!-- Reference to main JavaScript Files -->
+
+<script src="/../dreamstar/assets/js/header/mainHeaderShrink.js" type="application/javascript"></script>
+<script src="/../dreamstar/assets/js/header/slideOut/slideOut.js" type="application/javascript"></script>
+
+
+
+<script src="/../dreamstar/assets/js/footer/gitFeedback.js" type="application/javascript"></script>
+
+
+</html>

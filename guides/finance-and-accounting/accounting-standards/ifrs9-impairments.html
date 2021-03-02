@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- HTML Head Tag Links -->
+		<!-- Reference to HTML Head Tag Links -->
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IFRS 9 - Impairment | DreamStar </title>
+
+<!-- link to Website Tab Icon -->
+<link rel="shortcut icon" type="image/x-icon" href="/../dreamstar/assets/images/alt-logo-star-tilted.png">
+
+<!-- link to Main Stylesheets -->
+<link rel="stylesheet" type="text/css" href="/../dreamstar/assets/css/styles.css">
+
+<!-- link to Google Fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+
+
+    <link href='https://fonts.googleapis.com/css?family=Zilla Slab' rel='stylesheet'>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@350..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
+<!-- link to Font awesome -->
+<script src="https://kit.fontawesome.com/378306bc97.js" crossorigin="anonymous"></script>
+
+<!-- link to Material Icons -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!-- link to Iconify CDN -->
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+<!-- link to UUID -->	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv5.min.js"></script>
+
+
+	</head>
+
+	<!-- Set Color Theme to Body-->
+	<body class="
+	
+	">
+		
+		<!-- Needed for any Scroll to Top Buttons -->
+		<a id="top"></a>
+
+		<!-- Sections to Website -->
+			<!-- Site Header --> 
+
+<header class="site-header">
+
+    <!-- Main Header --> 
+    <div class="main-header">
+        <div class="main-header__container">
+            <a class="site-header__logo-link" href="/../dreamstar/">
+                <img class="site-header__logo" src="/../dreamstar/logos/dream-star-logo-text.png">
+
+                <div class="overlay">
+                    <img class="site-header__logo-square" src="/../dreamstar/logos/dream-star-logo.png"> 
+                </div>
+
+            </a>
+            <nav class="main-nav c">
+                <ul class="primary-nav">
+                    <li class="primary-nav__item
+                    
+                    ">
+                        <a class="primary-nav__link primary-nav__hover1" href="/../dreamstar/careers/">
+                            Industry
+                        </a>
+                    </li>
+                    <li class="primary-nav__item
+                    
+                    ">
+                        <a class="primary-nav__link primary-nav__hover1">
+                            Finance
+                        </a>
+                    </li>
+                    <li class="primary-nav__item
+                    
+                    ">
+                        <a class="primary-nav__link primary-nav__hover1" href="/../dreamstar/insight/">
+                            Insight
+                        </a>
+                    </li>
+                    <li class="primary-nav__item
+                    
+                    ">
+                        <a class="primary-nav__link primary-nav__hover1">
+                            About
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="main-header__right">
+                <span class="header-sidebar-nav">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 26" class="header-sidebar-nav-toggle__icon">
+                        <path fill="currentColor" d="M1937.14,394.5a9.75,9.75,0,1,1,9.79-9.751A9.778,9.778,0,0,1,1937.14,394.5Zm0-16.251a6.5,6.5,0,1,0,6.52,6.5A6.521,6.521,0,0,0,1937.14,378.249ZM1933.92,401h-35.91v-3.25h35.91V401Zm16.71-.032-8.15-8.6,2.37-2.231,8.15,8.6Zm-29.79-8.093h-22.83v-3.251h22.83v3.251Zm0-8.126h-22.83V381.5h22.83v3.249Z" transform="translate(-1898 -375)" />
+                    </svg>
+                </span>
+            </nav>
+
+        </div>
+    </div>
+    <!-- End of Main Header --> 
+    
+
+    <!-- Secondary Header --> 
+    
+    
+    <!-- End of Secondary Header --> 
+
+
+    <!-- Slide Out Mask --> 
+    <div class="slide-out-mask">  
+    </div>
+    <!-- End of Slide Out Mask --> 
+
+    
+    <!-- Slide Out --> 
+    <!-- Slide Out --> 
+
+<div class="slide-out"> 
+
+    <nav class="slide-out-nav">
+        <ul class="slide-out-nav__list">
+
+            <li class="slide-out-nav__item
+            
+            ">
+                <span class="nav-dropdown-toggle">
+                    <svg class="icon--m">
+                        <use xlink:href="#chevron-down">
+                            <symbol id="chevron-down" viewBox="0 0 448 512">
+                                <path fill="currentColor" d="M441.9 167.3l-19.8-19.8c-4.7-4.7-12.3-4.7-17 0L224 328.2 42.9 147.5c-4.7-4.7-12.3-4.7-17 0L6.1 167.3c-4.7 4.7-4.7 12.3 0 17l209.4 209.4c4.7 4.7 12.3 4.7 17 0l209.4-209.4c4.7-4.7 4.7-12.3 0-17z"></path>
+                            </symbol>
+                        </use>
+                    </svg>
+                </span>
+                <a class="slide-out-nav__link" href="/">Home</a>
+                <ul class="mobile-nav-dropdown">
+                    <li class="mobile-nav-dropdown__item
+                    
+                    ">
+                        <a class="mobile-nav-dropdown__link" href="">
+                            What we do
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="slide-out-nav__item
+            
+            ">
+                <span class="nav-dropdown-toggle">
+                    <svg class="icon--m">
+                        <use xlink:href="#chevron-down">
+                            <symbol id="chevron-down" viewBox="0 0 448 512">
+                                <path fill="currentColor" d="M441.9 167.3l-19.8-19.8c-4.7-4.7-12.3-4.7-17 0L224 328.2 42.9 147.5c-4.7-4.7-12.3-4.7-17 0L6.1 167.3c-4.7 4.7-4.7 12.3 0 17l209.4 209.4c4.7 4.7 12.3 4.7 17 0l209.4-209.4c4.7-4.7 4.7-12.3 0-17z"></path>
+                            </symbol>
+                        </use>
+                    </svg>
+                </span>
+                <a class="slide-out-nav__link" href="/../dreamstar/careers/"">Industry</a>
+                <ul class="mobile-nav-dropdown">
+                    <li class="mobile-nav-dropdown__item
+                    
+                    ">
+                        <a class="mobile-nav-dropdown__link" href="/../dreamstar/careers/job-profiles/">
+                            Job Profiles
+                        </a>
+                    </li>
+                    <li class="mobile-nav-dropdown__item
+                    
+                    ">
+                        <a class="mobile-nav-dropdown__link" href="/../dreamstar/careers/first-day-on-set/">
+                            First day on set
+                        </a>
+                    </li>
+                    <li class="mobile-nav-dropdown__item
+                    
+                    ">
+                        <a class="mobile-nav-dropdown__link" href="/../dreamstar/careers/how-to-get-in/">
+                            How to get in
+                        </a>
+                    </li>
+                    <li class="mobile-nav-dropdown__item
+                    
+                    ">
+                        <a class="mobile-nav-dropdown__link" href="/../dreamstar/careers/building-your-portfolio/">
+                            Portfolio
+                        </a>
+                    </li>
+                    <li class="mobile-nav-dropdown__item
+                    
+                    ">
+                        <a class="mobile-nav-dropdown__link" href="/../dreamstar/careers/how-to-network-well/">
+                            Network
+                        </a>
+                    </li>
+                    <li class="mobile-nav-dropdown__item
+                    
+                    ">
+                        <a class="mobile-nav-dropdown__link" href="/../dreamstar/careers/how-to-approach-employers/">
+                            Approaching employers
+                        </a>
+                    </li>
+                    <li class="mobile-nav-dropdown__item
+                    
+                    ">
+                        <a class="mobile-nav-dropdown__link" href="/../dreamstar/careers/freelancers/">
+                            Freelancers
+                        </a>
+                    </li>
+                    <li class="mobile-nav-dropdown__item
+                    
+                    ">
+                        <a class="mobile-nav-dropdown__link" href="/../dreamstar/careers/career-resources/">
+                            Career Resources
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="slide-out-nav__item
+            
+            ">
+                <span class="nav-dropdown-toggle">
+                    <svg class="icon--m">
+                        <use xlink:href="#chevron-down">
+                            <symbol id="chevron-down" viewBox="0 0 448 512">
+                                <path fill="currentColor" d="M441.9 167.3l-19.8-19.8c-4.7-4.7-12.3-4.7-17 0L224 328.2 42.9 147.5c-4.7-4.7-12.3-4.7-17 0L6.1 167.3c-4.7 4.7-4.7 12.3 0 17l209.4 209.4c4.7 4.7 12.3 4.7 17 0l209.4-209.4c4.7-4.7 4.7-12.3 0-17z"></path>
+                            </symbol>
+                        </use>
+                    </svg>
+                </span>
+                <a class="slide-out-nav__link" href="/">Finance</a>
+                <ul class="mobile-nav-dropdown">
+                    <li class="mobile-nav-dropdown__item
+                    
+                    ">
+                        <a class="mobile-nav-dropdown__link" href="">
+                            Production Accounting
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+        
+            <li class="slide-out-nav__item
+            
+            ">
+                <span class="nav-dropdown-toggle">
+                    <svg class="icon--m">
+                        <use xlink:href="#chevron-down">
+                            <symbol id="chevron-down" viewBox="0 0 448 512">
+                                <path fill="currentColor" d="M441.9 167.3l-19.8-19.8c-4.7-4.7-12.3-4.7-17 0L224 328.2 42.9 147.5c-4.7-4.7-12.3-4.7-17 0L6.1 167.3c-4.7 4.7-4.7 12.3 0 17l209.4 209.4c4.7 4.7 12.3 4.7 17 0l209.4-209.4c4.7-4.7 4.7-12.3 0-17z"></path>
+                            </symbol>
+                        </use>
+                    </svg>
+                </span>
+                <a class="slide-out-nav__link" href="/../dreamstar/insight/">Insight</a>
+                <ul class="mobile-nav-dropdown">
+                    <li class="mobile-nav-dropdown__item
+                    
+                    ">
+                        <a class="mobile-nav-dropdown__link" href="/../dreamstar/insight/news/">
+                            News
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="slide-out-nav__item   
+            
+            ">
+                <span class="nav-dropdown-toggle">
+                    <svg class="icon--m">
+                        <use xlink:href="#chevron-down">
+                            <symbol id="chevron-down" viewBox="0 0 448 512">
+                                <path fill="currentColor" d="M441.9 167.3l-19.8-19.8c-4.7-4.7-12.3-4.7-17 0L224 328.2 42.9 147.5c-4.7-4.7-12.3-4.7-17 0L6.1 167.3c-4.7 4.7-4.7 12.3 0 17l209.4 209.4c4.7 4.7 12.3 4.7 17 0l209.4-209.4c4.7-4.7 4.7-12.3 0-17z"></path>
+                            </symbol>
+                        </use>
+                    </svg>
+                </span>
+                <a class="slide-out-nav__link" href="/">About</a>
+                <ul class="mobile-nav-dropdown">
+                    <li class="mobile-nav-dropdown__item
+                    
+                    ">
+                        <a class="mobile-nav-dropdown__link" href="/">
+                            What we do
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
+
+    <ul class="slide-out-account-nav">
+        <li class="slide-out-account-nav__item">
+            <a class="slide-out-account-nav__link" href="">
+                Contact Us
+            </a>
+        </li>
+    </ul>
+
+    <ul class="slide-out-social">
+        <li class="slide-out-social__item">
+            <a class="slide-out-social__link" href="" target="_blank">
+                <svg class="icon--m">
+                    <use xlink:href="#facebook-f">
+                        <symbol id="facebook-f" viewBox="0 0 264 512">
+                            <path fill="currentColor" d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"></path>
+                        </symbol>
+                    </use>
+                </svg>
+            </a>
+        </li>
+    </ul>
+
+</div>
+
+<!-- End of Slide Out -->
+    <!-- End of Slide Out --> 
+     
+    
+</header>
+
+<!-- End of Site Header -->
+
+			<!-- Site BreadCrumbBar --> 
+
+<div class="site-breadcrumb">
+
+    <div class="site-breadcrumb-container">
+
+        
+<!-- breadCrumb Links from Front Matter of loaded page-->
+
+<!-- Liquid Code -->
+    <!-- Page Primary -->
+    
+
+    <!-- Page Secondary -->
+    
+
+    <!-- Page Category -->
+    
+
+    <!-- Page Series -->
+    
+<!-- / End of Liquid Code -->
+
+
+<!-- Breadcrumb Links --> 
+<nav class = "site-breadcrumb-container-nav">
+    <ul id="site-breadcrumb-container-list" class="site-breadcrumb-container-list">
+        <li class="site-breadcrumb-container-list__item">
+            <a class="site-breadcrumb-container-list__link" href="">
+                <span class =""></span>
+            </a>
+        </li>
+        <li class="site-breadcrumb-container-list__item">
+            <a class="site-breadcrumb-container-list__link" href="">
+                <span class =""></span>
+            </a>
+        </li>
+        <li class="site-breadcrumb-container-list__item">
+            <a class="site-breadcrumb-container-list__link" href="">
+                <span class="">Finance & Accounting</span>
+            </a>
+        </li>
+        <li class="site-breadcrumb-container-list__item">
+            <a class="site-breadcrumb-container-list__link" href=>
+                <span class="">Accounting Standards</span>
+            </a>
+        </li>
+
+        <!-- This part needs to be generated by JavaScript-->
+
+    </ul>
+</nav>
+<!-- end of / Breadcrumb links -->
+
+
+
+        <!-- breadCrumb Functions --> 
+
+<div class="site-breadcrumb-container-functions">
+    <ul class="site-breadcrumb-container-function-list">
+
+        <li class="site-breadcrumb-container-function-list__item">
+            <button class="site-breadcrumb-container-function-list__button colorfill" type="button" title="Print this page" onclick="window.print()">
+                <span class="icon">
+                    <span class="iconify" data-icon="el:print" data-inline="false"></span>
+                </span>
+                <span class="label">Print</span>
+            </button>
+        </li>
+
+
+        <li class="site-breadcrumb-container-function-list__item">
+            <button class="site-breadcrumb-container-function-list__button colorfill" title="Send feedback about this page" onclick="location.href='#feedback'">
+                <span class="icon">
+                    <i class="fas fa-comments"></i>
+                </span>
+                <span class="label">Feedback</span>
+            </button>
+        </li>
+
+
+        <li id="share-menu__item" class="site-breadcrumb-container-function-list__item">
+            <div>
+                <button class="site-breadcrumb-container-function-list__button colorfill" title="Share This Document">
+                    <span class="icon">
+                        <span class="iconify" data-icon="ls:share" data-inline="false"></span>
+                    </span>
+                    <span class="label">Share</span>
+                </button>
+
+                <div id="share-menu__container" class="sharing-menu has-padding-small is-hidden">
+                    <ul>
+                        <li id="twitter-link">
+                            <a class="share-menu__link" href="" target="_blank">
+                                <span class="icon">
+                                    <i class="fab fa-twitter colorfill"></i>
+                                </span>
+                                <span class="label">Twitter</span>
+                            </a>
+                        </li>
+                        <li id="linkedin-link">
+                            <a class="share-menu__link" href="" target="_blank">
+                                <span class="icon">
+                                    <i class="fab fa-linkedin-in colorfill"></i>
+                                </span>
+                                <span class="label">LinkedIn</span>
+                            </a>
+                        </li>
+                        <li id="facebook-link">
+                            <a class="share-menu__link" href="" target="_blank">
+                                <span class="icon">
+                                    <i class="fab fa-facebook-f colorfill"></i>
+                                </span>
+                                <span class="label">Facebook</span>
+                            </a>
+                        </li>
+                        <li id="email-link">
+                            <a class="share-menu__link" href="" target="_blank">
+                                <span class="icon">
+                                    <i class="fas fa-envelope colorfill"></i>
+                                </span>
+                                <span class="label">Email</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+
+    </ul>
+</div>
+
+<!-- end of / Page Functions -->
+ 
+    </div>
+    <div class="scollBarIndicator-container">
+        <!-- scrollBarIndicator --> 
+
+<div id="scrollBarIndicator-bar" class="scrollBarIndicator-container-bar">
+    
+</div>
+    </div>
+
+</div>
+
+<!-- End of BreadCrumbBar --> 
+			<!-- Start of Main Container --> 
+
+
+<!-- Different Structure depending on 'Layout' Property of Content-->
+<!-- ************************************************************************************************************ -->
+
+
+
+<div class="columns is-gapless-mobile has-margin-top-small">
+
+     <!-- Start of LHS Tree Docs -->
+     
+        <!-- Left Hand Side Tree Menu for Docs-->
+
+<nav id="affixed-left-sidebar" class="is-fixed is-flex is-flex-column">
+
+<!-- ********************************************************************************************************* -->
+
+    <!-- Include LHS Menu -->
+    
+
+<!-- ********************************************************************************************************* -->
+
+    <!-- Include the Correct Back Button -->
+    
+
+<!-- ********************************************************************************************************* -->
+
+</nav>
+
+<!-- End of Left Hand Side Tree Menu for Docs-->
+    </div> 
+    <!-- End of LHS Tree Docs --> 
+
+     <!-- Start of Primary Holder -->
+     
+
+        <div class="columns has-large-gaps is-gapless-mobile">
+
+            <!-- Start of Content Column -->
+            <div id="content-column" class="column is-full is-four-fifths-desktop">
+                <!-- Start of Content -->
+                <div class="content-wrap docs">
+                    <h1 id="ifrs-9---impairment">IFRS 9 - Impairment</h1>
+<time class="metadata" style="text-alstyleign:left"> Guides • Finance &amp; Accounting • 05/07/2019</time>
+
+<h2 class="colored-magenta" id="ifrs-9-impairment-credit-losses">IFRS 9: Impairment (Credit losses)</h2>
+
+<p>Impairment of financial assets is recognised in stages:</p>
+
+<ul>
+  <li>
+    <p><strong>Stage 1</strong> — as soon as a financial instrument is originated or purchased, 12-month expected credit losses are recognised in profit or loss and a loss allowance is established. This serves as a proxy for the initial expectations of credit losses. For financial assets, interest revenue is calculated on the gross carrying amount (i.e. without deduction for expected credit losses).</p>
+  </li>
+  <li>
+    <p><strong>Stage 2</strong> — if the credit risk increases significantly and is not considered low, full lifetime expected credit losses are recognised in profit or loss. The calculation of interest revenue is the same as for Stage 1.</p>
+  </li>
+  <li>
+    <p><strong>Stage 3</strong> — if the credit risk of a financial asset increases to the point that it is considered credit-impaired, interest revenue is calculated based on the amortised cost (ie the gross carrying amount less the loss allowance). Financial assets in this stage will generally be assessed individually. Lifetime expected credit losses are recognised on these financial assets.</p>
+  </li>
+</ul>
+
+<p>The impairment model in IFRS 9 is based on the premise of providing for expected losses.</p>
+
+<h2 class="colored-magenta" id="scope">Scope</h2>
+
+<p>IFRS 9 requires that the same impairment model apply to all of the following:</p>
+
+<ul>
+  <li>Financial assets measured at amortised cost;</li>
+  <li>Financial assets mandatorily measured at FVTOCI;</li>
+  <li>Loan commitments when there is a present obligation to extend credit (except where these are measured at FVTPL);
+    <ul>
+      <li>Financial guarantee contracts to which IFRS 9 is applied (except those measured at FVTPL);</li>
+      <li>Lease receivables within the scope of IFRS 16 Leases; and</li>
+      <li>Contract assets within the scope of IFRS 15 Revenue from Contracts with Customers (i.e. rights to consideration following transfer of goods or services).</li>
+    </ul>
+  </li>
+</ul>
+
+<p>All instruments measured at fair value through profit or loss (FVTPL) are not required to be assessed for 
+impairment because any fair value movements are automatically reflected in profit or loss</p>
+
+<h2 class="colored-magenta" id="indicators-of-impairment">Indicators of impairment</h2>
+
+<p>Under IFRS 9 a financial asset is credit-impaired when one or more events that have occurred and have a significant impact on the expected future cash flows of the financial asset. It includes observable data that has come to the attention of the holder of a financial asset about the following events:</p>
+
+<ul>
+  <li>Significant financial difficulty of the issuer or borrower;</li>
+  <li>A breach of contract, such as a default or past-due event;</li>
+  <li>The lenders for economic or contractual reasons relating to the borrower’s financial difficulty granted the borrower a concession that would not otherwise be considered;</li>
+  <li>It becoming probable that the borrower will enter bankruptcy or other financial reorganisation;</li>
+  <li>The disappearance of an active market for the financial asset because of financial difficulties; or</li>
+  <li>The purchase or origination of a financial asset at a deep discount that reflects incurred credit losses.</li>
+</ul>
+
+<h2 class="colored-magenta" id="general-approach">General approach</h2>
+
+<p>With the exception of <strong>purchased or originated credit-impaired</strong> financial assets (see below), expected credit losses are required to be measured through a loss allowance at an amount equal to:</p>
+
+<ul>
+  <li>The 12-month expected credit losses (expected credit losses that result from those default events on the financial instrument that are possible within 12 months after the reporting date); or</li>
+  <li>Full lifetime expected credit losses (expected credit losses that result from all possible default events over the life of the financial instrument).</li>
+</ul>
+
+<p>A loss allowance for full lifetime expected credit losses is required for a financial instrument if the credit risk of that financial instrument has increased significantly since initial recognition, as well as to contract assets or trade receivables that do not constitute a financing transaction in accordance with IFRS 15.</p>
+
+<p>Additionally, entities can elect an accounting policy to recognise full lifetime expected losses for all contract assets and/or all trade receivables that do constitute a financing transaction in accordance with IFRS 15. The same election is also separately permitted for lease receivables.</p>
+
+<p>For all other financial instruments, expected credit losses are measured at an amount equal to the 12-month expected credit losses.</p>
+
+<h2 class="colored-magenta" id="recognition-of-losses">Recognition of losses</h2>
+
+<style>
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color:  #eeeded;
+  color: black;
+}
+table tr:hover {background-color: #f5f5f5;}
+table {
+    margin-top: 0.5rem;
+    padding: 1.2rem;
+    -moz-border-radius: 5px !important;
+    border-radius: 5px;
+    transition-property: all;
+    transition-duration: 120ms;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+}
+table:hover{
+    border-radius: 5px;
+    -webkit-box-shadow:0 0px 24px 0 rgba(0,0,0,0.3);
+    box-shadow:0 0px 24px 0 rgba(0,0,0,0.3);
+}
+</style>
+
+<table>
+  <thead>
+    <tr>
+      <th>Financial Asset</th>
+      <th>Credit Entry</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Financial assets at amortised cost</td>
+      <td>Credit an allowance account. This is offset against the carrying amount of the financial asset so that a net position is presented in the statement of financial position.</td>
+    </tr>
+    <tr>
+      <td>Financial assets at fair value through other comprehensive income</td>
+      <td>Credit an ‘accumulated impairment amount’ in other comprehensive income.</td>
+    </tr>
+    <tr>
+      <td>Loan commitments and financial guarantee contracts</td>
+      <td>Credit a provision account, which is presented as a separate liability.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 class="colored-magenta" id="significant-increase-in-credit-risk">Significant increase in credit risk</h2>
+
+<p>With the exception of <strong>purchased or originated credit-impaired</strong> financial assets (see below), the loss allowance for financial instruments is measured at an amount equal to lifetime expected losses if the credit risk of a financial instrument has increased significantly since initial recognition, unless the credit risk of the financial instrument is low at the reporting date in which case it can be assumed that credit risk on the financial instrument has not increased significantly since initial recognition.</p>
+
+<p>The Standard considers credit risk low if there is a low risk of default, the borrower has a strong capacity to meet its contractual cash flow obligations in the near term and adverse changes in economic and business conditions in the longer term may, but will not necessarily, reduce the ability of the borrower to fulfil its contractual cash flow obligations. The Standard suggests that ‘investment grade’ rating might be an indicator for a low credit risk.</p>
+
+<p>The assessment of whether there has been a significant increase in credit risk is based on an increase in the probability of a default occurring since initial recognition. Under the Standard, an entity may use various approaches to assess whether credit risk has increased significantly (provided that the approach is consistent with the requirements). An approach can be consistent with the requirements even if it does not include an explicit probability of default occurring as an input. The application guidance provides a list of factors that may assist an entity in making the assessment. Also, whilst in principle, the assessment of whether a loss allowance should be based on lifetime expected credit losses is to be made on an individual basis, some factors or indicators might not be available at an instrument level. In this case, the entity should perform the assessment on appropriate groups or portions of a portfolio of financial instruments.</p>
+
+<p>The requirements also contain a rebuttable presumption that the credit risk has increased significantly when contractual payments are more than 30 days past due. IFRS 9 also requires that (other than for purchased or originated credit impaired financial instruments) if a significant increase in credit risk that had taken place since initial recognition and has reversed by a subsequent reporting period (i.e., cumulatively credit risk is not significantly higher than at initial recognition) then the expected credit losses on the financial instrument revert to being measured based on an amount equal to the 12-month expected credit losses.</p>
+
+<h2 class="colored-magenta" id="purchased-or-originated-credit-impaired-financial-assets">Purchased or originated credit-impaired financial assets</h2>
+
+<p>Purchased or originated credit-impaired financial assets are treated differently because the asset is credit-impaired at initial recognition (a negative effect on future expected cash flows have already occurred). For these assets, an entity would recognise changes in lifetime expected losses since initial recognition as a loss allowance with any changes recognised in profit or loss. Under the requirements, any favourable changes for such assets are an impairment gain even if the resulting expected cash flows of a financial asset exceed the estimated cash flows on initial recognition.</p>
+
+<p>Where financial assets are already credit-impaired when they are purchased/originated, the following approach is taken:</p>
+
+<ul>
+  <li>Purchased credit-impaired financial assets are initially measured at the transaction price without an allowance for expected contractual cash shortfalls that are implicit in the purchase price.</li>
+  <li>Lifetime credit losses are included in the estimated cash flows for the purposes of calculating the effective interest rate.</li>
+  <li>Interest revenue is calculated on the net carrying amount at the credit-adjusted effective interest rate.</li>
+  <li>Expected credit losses are discounted using the credit-adjusted effective interest rate determined at initial recognition.</li>
+  <li>Subsequent changes from the initial expected credit losses are recognised immediately in profit or loss.</li>
+</ul>
+
+<h2 class="colored-magenta" id="basis-for-estimating-expected-credit-losses">Basis for estimating expected credit losses</h2>
+
+<p>Any measurement of expected credit losses under IFRS 9 shall reflect an unbiased and probability-weighted amount that is determined by evaluating the range of possible outcomes as well as incorporating the time value of money. Also, the entity should consider reasonable and supportable information about past events, current conditions and reasonable and supportable forecasts of future economic conditions when measuring expected credit losses.</p>
+
+<p>The Standard defines expected credit losses as the weighted average of credit losses with the respective risks of a default occurring as the weightings. Whilst an entity does not need to consider every possible scenario, it must consider the risk or probability that a credit loss occurs by considering the possibility that a credit loss occurs and the possibility that no credit loss occurs, even if the probability of a credit loss occurring is low.</p>
+
+<p>In particular, for lifetime expected losses, an entity is required to estimate the risk of a default occurring on the financial instrument during its expected life. 12-month expected credit losses represent the lifetime cash shortfalls that will result if a default occurs in the 12 months after the reporting date, weighted by the probability of that default occurring.</p>
+
+<p>An entity is required to incorporate reasonable and supportable information (i.e., that which is reasonably available at the reporting date). Information is reasonably available if obtaining it does not involve undue cost or effort (with information available for financial reporting purposes qualifying as such).</p>
+
+<p>For applying the model to a loan commitment an entity will consider the risk of a default occurring under the loan to be advanced, whilst application of the model for financial guarantee contracts an entity considers the risk of a default occurring of the specified debtor.</p>
+
+<p>An entity may use practical expedients when estimating expected credit losses if they are consistent with the principles in the Standard (for example, expected credit losses on trade receivables may be calculated using a provision matrix where a fixed provision rate applies depending on the number of days that a trade receivable is outstanding).</p>
+
+<p>To reflect time value, expected losses should be discounted to the reporting date using the effective interest rate of the asset (or an approximation thereof) that was determined at initial recognition. A “credit-adjusted effective interest” rate should be used for expected credit losses of purchased or originated credit-impaired financial assets.  In contrast to the “effective interest rate” (calculated using expected cash flows that ignore expected credit losses), the credit-adjusted effective interest rate reflects expected credit losses of the financial asset.</p>
+
+<p>Expected credit losses of undrawn loan commitments should be discounted by using the effective interest rate (or an approximation thereof) that will be applied when recognising the financial asset resulting from the commitment. If the effective interest rate of a loan commitment cannot be determined, the discount rate should reflect the current market assessment of time value of money and the risks that are specific to the cash flows but only if, and to the extent that, such risks are not taken into account by adjusting the discount rate. This approach shall also be used to discount expected credit losses of financial guarantee contracts.</p>
+
+<h2 class="colored-magenta" id="modifications-to-existing-financial-assets">Modifications to existing financial assets</h2>
+
+<p>Loans and advances may be <strong>subject to modification</strong>, for example, if forbearance terms are offered such as a payment holiday or a reduction in the rate of interest charged.</p>
+
+<p>The modification of cash flows <strong>may lead to derecognition of the existing financial asset</strong> if there is a <strong>substantial change in terms</strong>. Judgement will need to be applied regarding what constitutes a substantial change.</p>
+
+<p>When the modification results in the derecognition of the existing financial asset, the modified financial asset is considered to be a new financial asset. The new financial asset is therefore treated as any other financial asset on initial recognition and a loss allowance equal to 12-month expected credit losses is created.</p>
+
+<p>In rare circumstances, the new asset may be credit-impaired at initial recognition and would be treated as a purchased credit-impaired financial asset, as described above. This could occur if a distressed asset was subject to a substantial modification.</p>
+
+<p>When the modification does not result in the derecognition of the existing financial asset, the entity must assess whether there has been a significant increase in credit risk since initial recognition using the principles outlined above.</p>
+
+<p>Evidence that the criteria for the recognition of lifetime expected credit losses are no longer met, and that the asset may return from Stage 2 to Stage 1, may include a history of up-to-date and timely payments against modified contractual terms.</p>
+
+<p>A customer would need to demonstrate consistently good payment behaviour over a period of time before the credit risk is considered to have decreased. For example, a history of missed payments would not be erased simply by making one payment on time following a modification of the contractual terms.</p>
+
+<h2 class="colored-magenta" id="further-information">Further Information</h2>
+
+<div class="callout callout-default">
+
+  <p><i class="fa fa-info-circle">  <strong>More information</strong></i></p>
+
+  <p>You can find out more about the IFRS 9 Standard here:</p>
+
+  <ul>
+    <li><a href="https://www.icaew.com/technical/financial-reporting/ifrs/ifrs-standards/ifrs-9-financial-instruments-replacement-of-ias-39" target="_blank">IFRS 9 - ICAEW</a></li>
+    <li><a href="https://www.iasplus.com/en/standards/ifrs/ifrs9" target="_blank">IFRS 9 - IASPLUS</a></li>
+    <li><a href="files/ifrs9-financial-instruments-handbook.pdf" target="_blank">BDO - IFRS 9 Financial Instruments Handbook</a></li>
+  </ul>
+</div>
+
+
+
+                    <!-- Start of Content Bottom Navigation -->
+                    <!-- Content Bottom Navigation for Docs -->
+
+
+
+<!-- End of Content Bottom Navigation for Docs -->
+                    <!-- End of Content Bottom Navigation -->
+
+                </div>
+                <!-- End of Content -->
+            </div>
+             <!-- End of Content Column -->
+
+            <!-- Start of RHS Tree Docs -->
+            <div class="right-sidebar column is-one-quarter is-one-fifth-desktop is-hidden-mobile is-hidden-tablet-only">
+                <nav id="affixed-right-sidebar" class="is-fixed is-vertically-scrollable">
+    <nav id="right-sidebar-outline">
+        <header id="right-sidebar-title">
+            <a href="#top">
+                <h3 class="is-flex is-flex-row has-flex-align-items-center" title="Go to Top of Page">
+                    <i class="fas fa-file-alt">&nbsp;</i>
+                    <div class="right-sidebar-heading">
+                        In this article
+                    </div>
+                </h3>
+            </a>
+        </header>
+        <ul class="right-sidebar-nav">
+<li class="rhs-toc-entry rhs-toc-h2"><a href="#ifrs-9-impairment-credit-losses">IFRS 9: Impairment (Credit losses)</a></li>
+<li class="rhs-toc-entry rhs-toc-h2"><a href="#scope">Scope</a></li>
+<li class="rhs-toc-entry rhs-toc-h2"><a href="#indicators-of-impairment">Indicators of impairment</a></li>
+<li class="rhs-toc-entry rhs-toc-h2"><a href="#general-approach">General approach</a></li>
+<li class="rhs-toc-entry rhs-toc-h2"><a href="#recognition-of-losses">Recognition of losses</a></li>
+<li class="rhs-toc-entry rhs-toc-h2"><a href="#significant-increase-in-credit-risk">Significant increase in credit risk</a></li>
+<li class="rhs-toc-entry rhs-toc-h2"><a href="#purchased-or-originated-credit-impaired-financial-assets">Purchased or originated credit-impaired financial assets</a></li>
+<li class="rhs-toc-entry rhs-toc-h2"><a href="#basis-for-estimating-expected-credit-losses">Basis for estimating expected credit losses</a></li>
+<li class="rhs-toc-entry rhs-toc-h2"><a href="#modifications-to-existing-financial-assets">Modifications to existing financial assets</a></li>
+<li class="rhs-toc-entry rhs-toc-h2"><a href="#further-information">Further Information</a></li>
+</ul>
+    </nav>
+
+    <!-- Fixed Element-->
+    <div>
+        <a class="rhs-top-link hide" href="" id="js-top" title="Go to Top of Page">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
+        </a>
+    </div>
+</nav>
+            </div>
+            <!-- End of RHS Tree Docs --> 
+
+        </div>
+
+    </div>
+     <!-- End of Primary Holder -->
+
+</div>
+
+
+
+
+<!-- ************************************************************************************************************ -->
+
+<!-- End of Main Container -->
+			<!-- Site Feedback -->
+
+<div id="feedback" class="site-feedback">
+    <div class="container">
+        <h2 class="feedback-panel__title">Feedback</h2>
+        <p class="feedback-panel__body">Submit and view feedback</p>
+            <a class="btn feedback-submit__btn" href="" target="_blank">
+                <span class="icon-is-medium">
+                    <i class="fab fa-github fa-2x"></i>
+                </span>
+                <span>Submit</span>
+            </a>
+            <a class="btn feedback-view__btn" href="" target="_blank">
+                <span class="icon-is-medium">
+                    <i class="fab fa-github fa-2x"></i>
+                </span>
+                <span>View</span>
+            </a>
+    </div>
+</div>
+
+<!-- End of Feedback -->
+
+
+
+
+   
+
+			<!-- Site Footer --> 
+
+<div class="footer">
+    <div class="container">
+
+        <div class="">
+            <a class="site-footer__logo-link" href="https://startech-enterprises.github.io/docs/">
+                <img class="site-footer__logo" src="/../dreamstar/logos/dream-star-logo-footer.png">
+            </a>
+        </div>
+
+        <div class="footer__row row">
+
+            <div class="footer__column col-sm-4 col-lg-2">
+                <h4 class="footer__title">
+                    <a class="footer__title-link" href="/../dreamstar/careers/">Industry</a>
+                </h4>
+                <ul class="footer-list c">
+                    <li class="footer-list__item">
+                        <a class="footer-list__link" href="/../dreamstar/careers/job-profiles/">Job Profiles</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__link" href="/../dreamstar/careers/first-day-on-set/">First day on set</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__link" href="/../dreamstar/careers/how-to-get-in/">How to get in</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__link" href="/../dreamstar/careers/building-your-portfolio/">Portfolio</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__link" href="/../dreamstar/careers/how-to-network-well/">Network</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__link" href="/../dreamstar/careers/how-to-approach-employers/">Approaching employers</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__link" href="/../dreamstar/careers/freelancers/">Freelancers</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__link" href="/../dreamstar/careers/career-resources/">Careers resources</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__column col-sm-4 col-lg-2">
+                <h4 class="footer__title">
+                    <a class="footer__title-link" href="">Finance</a>
+                </h4>
+            </div>
+
+            <div class="footer__column col-sm-4 col-lg-2">
+                <h4 class="footer__title">
+                    <a class="footer__title-link" href="/../dreamstar/insight/">Insight</a>
+                </h4>
+                <ul class="footer-list c">
+                    <li class="footer-list__item">
+                        <a class="footer-list__link" href="/../dreamstar/insight/news/">News</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__column col-sm-4 col-lg-2">
+                <h4 class="footer__title">
+                    <a class="footer__title-link" href="">About</a>
+                </h4>
+            </div>
+
+        </div>
+
+        <div class="c">
+
+        </div>
+
+        <ul class="footer-partner-logos">
+                <li class="footer-partner-logos__item">
+                    <a class="footer-partner-logos__link" href="" target="_blank;">
+                        <img class="footer-partner-logos__img" src="/../dreamstar/assets/images/footer/BFI.png" alt="BFI" width="115">
+                    </a>
+                </li>
+                <li class="footer-partner-logos__item">
+                    <a class="footer-partner-logos__link" href="" target="_blank;">
+                        <img class="footer-partner-logos__img" src="/../dreamstar/assets/images/footer/ArtsCouncil.png" alt="Arts Council" width="115">
+                    </a>
+                </li>
+                <li class="footer-partner-logos__item">
+                    <a class="footer-partner-logos__link" href="" target="_blank;">
+                        <img class="footer-partner-logos__img" src="/../dreamstar/assets/images/footer/BBC.png" alt="BBC" width="60">
+                    </a>
+                </li>
+                <li class="footer-partner-logos__item">
+                    <a class="footer-partner-logos__link" href="" target="_blank;">
+                        <img class="footer-partner-logos__img" src="/../dreamstar/assets/images/footer/Channel4.png" alt="Channel 4" width="28">
+                    </a>
+                </li>
+                <li class="footer-partner-logos__item">
+                    <a class="footer-partner-logos__link" href="" target="_blank;">
+                        <img class="footer-partner-logos__img" src="/../dreamstar/assets/images/footer/Channel5.png" alt="Channel 5" width="25">
+                    </a>
+                </li>
+        </ul>
+
+        <ul class="footer-social">
+            <li class="footer-social__item">
+                <a class="footer-social__link" href="/" target="_blank;">
+                    <svg class="icon--m">
+                        <use xlink:href="#facebook-f">
+                            <symbol id="facebook-f" viewBox="0 0 264 512">
+                                <path fill="currentColor" d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"></path>
+                            </symbol>
+                        </use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+
+        <div class="c">
+
+        </div>
+
+        <ul class="footer-contact c">
+            <li class="footer-contact__item">
+                Dream Star Entertainment, London, United Kingdom
+            </li>
+
+            <li class="footer-contact__item">
+                <a class="footer-contact__link" href="" target="_blank;">
+                    tbc@tbc.com
+                </a>
+            </li>
+            <li class="footer-contact__item footer-contact__item--last">
+                Tel: +44 (0) ...TBC
+            </li>
+        </ul>
+
+    </div>
+
+</div>
+
+<!-- End of Site Footer -->	
+	</body>
+
+	<!-- Main JavaScript Files -->
+	<!-- Reference to main JavaScript Files -->
+
+<script src="/../dreamstar/assets/js/header/mainHeaderShrink.js" type="application/javascript"></script>
+<script src="/../dreamstar/assets/js/header/slideOut/slideOut.js" type="application/javascript"></script>
+
+
+    <script src="/../dreamstar/assets/js/header/breadCrumb/breadCrumbLinks.js" type="application/javascript"></script>
+    <script src="/../dreamstar/assets/js/header/breadCrumb/breadCrumbFunctions.js" type="application/javascript"></script>
+    <script src="/../dreamstar/assets/js/header/breadCrumb/scrollBarIndicator.js" type="application/javascript"></script>
+
+    <script src="/../dreamstar/assets/js/main/affix.js" type="application/javascript"></script>
+
+    
+
+    <script src="/../dreamstar/assets/js/main/content/contentMain/imageModal.js" type="application/javascript"></script>
+    <script src="/../dreamstar/assets/js/other/library.js" type="application/javascript"></script>
+    <script src="/../dreamstar/assets/js/other/copyCode.js" type="application/javascript"></script>
+
+    
+
+    <script src="/../dreamstar/assets/js/main/rhsTree/rhsTreeMenu.js" type="application/javascript"></script>
+    <script src="/../dreamstar/assets/js/main/rhsTree/scrollTop.js" type="application/javascript"></script>
+
+
+<script src="/../dreamstar/assets/js/footer/gitFeedback.js" type="application/javascript"></script>
+
+	
+</html>

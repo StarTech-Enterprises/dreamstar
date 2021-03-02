@@ -13,6 +13,7 @@
     let pageWidth = 0;
     let pagePrimary = document.getElementById('page-primary').textContent;
     let pageLayout = document.getElementById('page-layout').textContent;
+    let pageType = document.getElementById('page-type').textContent;
     let pageCategory = document.getElementById('page-category').textContent;
 
     let mainHeader = document.getElementsByClassName('main-header');
@@ -125,7 +126,7 @@
                 secondaryHeader[0].style.opacity = "1";
                 secondaryHeader[0].style.borderBottom = "1px solid #eee";
             }
-            else if(pageWidth > 1250 && docScroll + screen.height - 30 < document.body.clientHeight)  {
+            else if(pageWidth > 1250 && docScroll + screen.height - 30 < document.body.clientHeight && pageType!= "landing")  {
                 secondaryHeader[0].style.height = "4.5rem";
                 secondaryHeader[0].style.opacity = "1";
                 secondaryHeader[0].style.borderBottom = "1px solid #d6d6d6";

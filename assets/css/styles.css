@@ -1237,7 +1237,7 @@ ul.lhs-tree-menu-toc .treeitem.is-expanded > .tree-expander > .tree-indicator { 
 
 .content-wrap .hero-img__img { background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; display: block; height: 0; padding-top: 56.25%; width: 100%; transition: all 400ms; }
 
-.content-wrap .hero-img__img:hover { transform: scale(0.98); box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2); }
+.content-wrap .hero-img__img:hover { transform: scale(1.01); box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2); }
 
 .content-wrap .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; }
 
